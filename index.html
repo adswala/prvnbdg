@@ -1,0 +1,295 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PARVEEN BDG</title>
+<meta name="description" content="Join PARVEEN BDG on Telegram for exclusive updates and VIP content.">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  min-height:100vh;
+  font-family:Arial,Helvetica,sans-serif;
+  color:#fff;
+  overflow-x:hidden;
+  background:
+    radial-gradient(circle at 10% 10%,rgba(34,158,217,.30),transparent 30%),
+    radial-gradient(circle at 90% 15%,rgba(99,102,241,.28),transparent 30%),
+    radial-gradient(circle at 50% 100%,rgba(34,158,217,.18),transparent 35%),
+    linear-gradient(135deg,#020617,#07152d 50%,#0b1b3a);
+}
+body:before{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  background-image:
+    linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);
+  background-size:45px 45px;
+}
+header{
+  width:min(1100px,92%);
+  margin:auto;
+  padding:25px 0;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:relative;
+  z-index:5;
+}
+.logo{font-size:22px;font-weight:900;letter-spacing:1px}
+.logo span{color:#38bdf8}
+.header-btn{
+  padding:11px 18px;
+  border-radius:10px;
+  color:#38bdf8;
+  text-decoration:none;
+  font-size:13px;
+  font-weight:800;
+  background:rgba(56,189,248,.12);
+  border:1px solid rgba(56,189,248,.4);
+}
+.hero{
+  width:min(900px,92%);
+  margin:75px auto 70px;
+  text-align:center;
+  position:relative;
+  z-index:2;
+}
+.badge{
+  display:inline-block;
+  padding:10px 18px;
+  border-radius:50px;
+  color:#38bdf8;
+  background:rgba(56,189,248,.12);
+  border:1px solid rgba(56,189,248,.35);
+  font-size:13px;
+  font-weight:800;
+}
+.hero h1{
+  margin:28px 0 22px;
+  font-size:clamp(45px,8vw,78px);
+  line-height:1.05;
+  letter-spacing:-2px;
+  font-weight:900;
+}
+.hero h1 span{
+  background:linear-gradient(90deg,#38bdf8,#22d3ee,#818cf8);
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+}
+.hero p{
+  max-width:680px;
+  margin:0 auto 30px;
+  color:#cbd5e1;
+  font-size:18px;
+  line-height:1.7;
+}
+.cta{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:16px 30px;
+  border-radius:12px;
+  background:linear-gradient(135deg,#229ed9,#167bb3);
+  color:#fff;
+  text-decoration:none;
+  font-size:15px;
+  font-weight:900;
+  box-shadow:0 12px 35px rgba(34,158,217,.35);
+}
+.small-text{margin-top:15px;color:#94a3b8;font-size:13px}
+.stats{
+  width:min(1000px,92%);
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+  position:relative;
+  z-index:2;
+}
+.stat,.feature{
+  background:rgba(255,255,255,.07);
+  border:1px solid rgba(255,255,255,.12);
+  backdrop-filter:blur(15px);
+  -webkit-backdrop-filter:blur(15px);
+  box-shadow:0 15px 45px rgba(0,0,0,.25);
+}
+.stat{
+  padding:30px 20px;
+  text-align:center;
+  border-radius:18px;
+}
+.stat h2{font-size:32px;color:#38bdf8;margin-bottom:7px}
+.stat p{color:#94a3b8;font-size:14px}
+.section-title{
+  text-align:center;
+  margin:100px 0 40px;
+  font-size:clamp(32px,5vw,45px);
+  font-weight:900;
+  position:relative;
+  z-index:2;
+}
+.features{
+  width:min(1050px,92%);
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px;
+  position:relative;
+  z-index:2;
+}
+.feature{
+  padding:32px 25px;
+  text-align:center;
+  border-radius:20px;
+}
+.icon{
+  width:62px;height:62px;
+  margin:0 auto 18px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border-radius:17px;
+  background:rgba(56,189,248,.12);
+  border:1px solid rgba(56,189,248,.2);
+  font-size:27px;
+}
+.feature h3{font-size:20px;margin-bottom:10px}
+.feature p{color:#94a3b8;font-size:14px;line-height:1.7}
+.telegram-box{
+  width:min(850px,92%);
+  margin:100px auto;
+  padding:60px 25px;
+  text-align:center;
+  border-radius:25px;
+  background:
+    radial-gradient(circle at 50% 0%,rgba(34,158,217,.25),transparent 60%),
+    rgba(255,255,255,.07);
+  border:1px solid rgba(56,189,248,.22);
+  backdrop-filter:blur(18px);
+  -webkit-backdrop-filter:blur(18px);
+  box-shadow:0 25px 70px rgba(0,0,0,.30);
+  position:relative;
+  z-index:2;
+}
+.telegram-icon{font-size:48px;margin-bottom:10px}
+.telegram-box h2{font-size:clamp(32px,5vw,44px);margin-bottom:10px}
+.telegram-box p{color:#94a3b8;margin-bottom:28px}
+footer{
+  padding:30px 20px;
+  text-align:center;
+  color:#64748b;
+  font-size:13px;
+  border-top:1px solid rgba(255,255,255,.08);
+  background:rgba(0,0,0,.15);
+  position:relative;
+  z-index:2;
+}
+@media(max-width:700px){
+  header{width:92%;padding:18px 0}
+  .logo{font-size:17px}
+  .header-btn{padding:10px 13px;font-size:11px}
+  .hero{width:92%;margin-top:55px}
+  .badge{font-size:11px;padding:9px 13px}
+  .hero h1{font-size:45px;letter-spacing:-1px}
+  .hero p{font-size:15px}
+  .stats{width:92%;grid-template-columns:1fr}
+  .features{width:92%;grid-template-columns:1fr}
+  .telegram-box{width:92%;padding:45px 20px;margin:70px auto}
+  .telegram-box h2{font-size:32px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">TEAM <span>PARVEEN</span></div>
+  <a href="https://t.me/+i8bX-6voL_hjMzZl" class="header-btn" target="_blank" rel="noopener noreferrer">
+    JOIN TELEGRAM
+  </a>
+</header>
+
+<section class="hero">
+  <div class="badge">🔥 TEAM PARVEEN BDG CHANNEL</div>
+
+  <h1>
+    Welcome to<br>
+    <span>Team PARVEEN BDG</span>
+  </h1>
+
+  <p>
+    Get exclusive updates, premium content and VIP insights
+    directly through our Telegram channel.
+  </p>
+
+  <a href="https://t.me/+i8bX-6voL_hjMzZl" class="cta" target="_blank" rel="noopener noreferrer">
+    🚀 JOIN VIP CHANNEL
+  </a>
+
+  <div class="small-text">🔒 Private Telegram Community</div>
+</section>
+
+<section class="stats">
+  <div class="stat">
+    <h2>VIP</h2>
+    <p>Exclusive Access</p>
+  </div>
+
+  <div class="stat">
+    <h2>24/7</h2>
+    <p>Updates</p>
+  </div>
+
+  <div class="stat">
+    <h2>100%</h2>
+    <p>Focused Community</p>
+  </div>
+</section>
+
+<h2 class="section-title">Why Join Us?</h2>
+
+<section class="features">
+  <div class="feature">
+    <div class="icon">🎯</div>
+    <h3>VIP Content</h3>
+    <p>Access exclusive content and updates available to our VIP members.</p>
+  </div>
+
+  <div class="feature">
+    <div class="icon">⚡</div>
+    <h3>Fast Updates</h3>
+    <p>Stay updated with important information directly through Telegram.</p>
+  </div>
+
+  <div class="feature">
+    <div class="icon">🔐</div>
+    <h3>Private Community</h3>
+    <p>Join a focused community of members inside our private Telegram channel.</p>
+  </div>
+</section>
+
+<section class="telegram-box">
+  <div class="telegram-icon">✈️</div>
+
+  <h2>Ready to Join?</h2>
+
+  <p>Join Team PARVEEN BDG on Telegram today.</p>
+
+  <a href="https://t.me/+i8bX-6voL_hjMzZl" class="cta" target="_blank" rel="noopener noreferrer">
+    PARVEEN BDG
+  </a>
+</section>
+
+<footer>
+  © 2026 PARVEEN BDG Channel. All rights reserved.
+</footer>
+
+</body>
+</html>
